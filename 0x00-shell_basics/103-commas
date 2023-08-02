@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -m -p -a | sed 's/, /,/g' | sed 's/,\(.\),/,\1,/; s/,\(.\),/,\1\//'
+ls -m -p -a -v | sed 's/, /,/g'
