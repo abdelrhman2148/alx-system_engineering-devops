@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -A1 | LC_COLLATE=C sort -d -k1.1
+ls -m -p --group-directories-first | sed ' s/ /, /g'
