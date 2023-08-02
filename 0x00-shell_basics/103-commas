@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -m -p -a -v | sed 's/, /,/g'
+ls -xamp
