@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -A1 | LC_COLLATE=C sort -d -k1.1 | awk '{ printf "%s%s", $0, (NR%2==0 ? ORS : ",") }'
+ls -A1 | LC_COLLATE=C sort -d -k1.1 
