@@ -1,7 +1,3 @@
 #!/bin/bash
-printf "./, ../, "
-ls -1Ap 
-LC_COLLATE=C 
-sort -d -k1.1
-awk '{ printf "%s", $0 (NR%2==0 ? ", " : "\n") }' 
-paste -d "" - -
+(echo "./, ../, "; ls -1Ap | LC_COLLATE=C sort -d -k1.1 | awk '{ printf "%s", $0 (NR%2==0 ? ", " : "\n") }') | paste -d "" - -
+
