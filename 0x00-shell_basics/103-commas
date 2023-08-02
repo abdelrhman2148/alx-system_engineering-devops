@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -al -m -p --group-directories-first 
+ls -ap1 | grep -E '^(\./|\.\./|[0-9a-zA-Z])' | sort | tr '\n' ','
