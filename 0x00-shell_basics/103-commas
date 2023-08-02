@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -m -p --group-directories-first | sed ' s/ /, /g'
+ls -m -p -a | sed 's/ /, /g' | sed 's/,\.\//, .\//; s/,\.\.\//, ..\//'
