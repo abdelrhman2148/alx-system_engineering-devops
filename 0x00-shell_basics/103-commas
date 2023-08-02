@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -ap1 | grep -E '^(\./|\.\./|[0-9a-zA-Z])' | sort | tr '\n' ' ' | sed 's/ $/\n/'
+ls -m -p -a | sed 's/, /,/g' | sed 's/,\(.\),/,\1,/; s/,\(.\),/,\1\//'
