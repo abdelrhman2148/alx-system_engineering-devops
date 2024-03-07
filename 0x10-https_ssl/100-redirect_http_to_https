@@ -27,7 +27,7 @@ frontend www-http
     redirect scheme https code 301 if !is_https
 
 frontend www-https
-    bind *:443 ssl crt /etc/letsencrypt/live/www.holberton.online/fullchain.pem
+    bind *:443 ssl crt /etc/letsencrypt/live/www.abdelrhmanfikri.tech/fullchain.pem
     reqadd X-Forwarded-Proto:\ https
     default_backend www-backend
 
